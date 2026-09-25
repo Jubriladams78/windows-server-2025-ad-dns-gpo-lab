@@ -4,6 +4,14 @@ I built this lab on my own machine to get real practice running a small Windows 
 
 This is a home lab, not a production environment. I did it to build the hands on skills that IT Support, Desktop Support, Microsoft 365 Support, and Junior Systems Administrator roles call for every day.
 
+## Lab Phases
+
+| Phase | What I built | Status |
+|---|---|---|
+| Phase 1 (this page) | Domain, DNS, OUs, user, security group, and a first GPO | Complete |
+| [Phase 2](phase-2-file-share-mapped-drive/README.md) | IT departmental SMB share, NTFS permissions, and an automatic I: drive through Group Policy Preferences | Complete |
+| Phase 3 | Separate IT, HR, and Sales shares with least privilege access and cross department testing | Planned |
+
 ## The Environment
 
 | System | Role | IPv4 | DNS Server | Domain |
@@ -147,7 +155,9 @@ Windows Server administration, Active Directory, DNS configuration and troublesh
 
 ## What's Next
 
-For the next phase I plan to add DHCP, SMB file shares with NTFS permissions, more departmental security groups, mapped drives through Group Policy Preferences, printer deployment, password and account lockout policies, and a few more troubleshooting scenarios.
+Phase 2 is done: I added an SMB file share with NTFS permissions and a mapped drive through Group Policy Preferences. You can read about it in [Phase 2: Departmental File Share and Mapped Drive](phase-2-file-share-mapped-drive/README.md).
+
+Next I plan to add separate IT, HR, and Sales shares with their own security groups, DHCP, printer deployment, password and account lockout policies, and a few more troubleshooting scenarios.
 
 ## A Note on Security
 
