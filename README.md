@@ -104,27 +104,32 @@ I created IT, Sales, and HR OUs under JJADAMS-Users.
 
 ![IT, Sales and HR OUs created under JJADAMS-Users](screenshots/08_Department_OUs.png)
 
-### 10. GG-IT-Users security group
+### 10. James Smith user account
+I created the test user James Smith in the IT OU under JJADAMS-Users.
+
+![James Smith Properties in Active Directory Users and Computers, with the account in the IT OU](screenshots/08_James_Smith_User_Account.png)
+
+### 11. GG-IT-Users security group
 I created `GG-IT-Users` in the JJADAMS-Groups OU as a Global Security group.
 
 ![GG-IT-Users properties in Active Directory Users and Computers showing Global scope and Security type](screenshots/08a_GG_IT_Users_Security_Group.png)
 
-### 11. James Smith added to GG-IT-Users
+### 12. James Smith added to GG-IT-Users
 The Members tab shows James Smith, whose account lives in the IT OU under JJADAMS-Users.
 
 ![GG-IT-Users Members tab listing James Smith from jjadamslab.local/JJADAMS-Users/IT](screenshots/08b_GG_IT_Users_Members.png)
 
-### 12. Domain sign in and group membership
+### 13. Domain sign in and group membership
 Signed in to C01 as `jjadamslab\jsmith`, `whoami /groups` lists JJADAMSLAB\GG-IT-Users.
 
 ![whoami /groups on C01 as jsmith showing membership in GG-IT-Users](screenshots/09_Domain_Sign_In_and_Group_Membership.png)
 
-### 13. Group Policy Management
+### 14. Group Policy Management
 This is the jjadamslab.local domain in the Group Policy Management console.
 
 ![Group Policy Management console open to the jjadamslab.local domain](screenshots/10_Group_Policy_Management_Console.png)
 
-### 14. Group Policy result
+### 15. Group Policy result
 `gpresult /r` on C01 shows that the IT Department User Policy applied to James Smith.
 
 ![gpresult output showing IT Department User Policy applied to jsmith](screenshots/11_Group_Policy_Result.png)
